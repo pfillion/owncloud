@@ -17,3 +17,4 @@ LABEL \
     org.label-schema.schema-version="1.0"
 
 COPY rootfs /
+RUN rm /etc/cron.d/owncloud

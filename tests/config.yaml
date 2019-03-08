@@ -1,0 +1,35 @@
+schemaVersion: "2.0.0"
+
+metadataTest:
+  labels:
+    - key: 'org.label-schema.build-date'
+      value: '.*'
+      isRegex: true
+    - key: 'org.label-schema.vcs-ref'
+      value: '.*'
+      isRegex: true  
+    - key: 'org.label-schema.version'
+      value: '.*'
+      isRegex: true
+  entrypoint: ["/usr/bin/entrypoint"]
+  cmd: ["/usr/bin/owncloud", "server"]
+  workdir: ""
+
+fileExistenceTests:
+- name: 'export-secret'
+  path: '/etc/entrypoint.d/export-secret.sh'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'group'
+- name: 'secret-helper'
+  path: '/usr/local/bin/secret-helper.sh'
+  shouldExist: true
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'group'
+- name: 'cron owncloud'
+  path: '/etc/cron.d/owncloud'
+  shouldExist: false

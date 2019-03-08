@@ -1,8 +1,9 @@
 # ownCloud
 
-[![](https://images.microbadger.com/badges/image/pfillion/owncloud.svg)](https://microbadger.com/images/pfillion/owncloud "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/pfillion/owncloud.svg)](https://microbadger.com/images/pfillion/owncloud "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/commit/pfillion/owncloud.svg)](https://microbadger.com/images/pfillion/owncloud "Get your own commit badge on microbadger.com")
+[![Build Status](https://drone.pfillion.com/api/badges/pfillion/owncloud/status.svg?branch=master)](https://drone.pfillion.com/pfillion/owncloud)
+[![microbadger image](https://images.microbadger.com/badges/image/pfillion/owncloud.svg)](https://microbadger.com/images/pfillion/owncloud "Get your own image badge on microbadger.com")
+[![microbadger image](https://images.microbadger.com/badges/version/pfillion/owncloud.svg)](https://microbadger.com/images/pfillion/owncloud "Get your own version badge on microbadger.com")
+[![microbadger image](https://images.microbadger.com/badges/commit/pfillion/owncloud.svg)](https://microbadger.com/images/pfillion/owncloud "Get your own commit badge on microbadger.com")
 
 These are docker images for [ownCloud](https://owncloud.org) community edition. Mainly, it's to manage [healthcheck](https://docs.docker.com/engine/reference/builder/#healthcheck) with credential specified by **secrets**.
 
@@ -11,8 +12,11 @@ The base image is from official [ownCloud](https://hub.docker.com/r/owncloud/ser
 ## Versions
 
 * [latest](https://github.com/pfillion/owncloud/tree/master) available as ```pfillion/owncloud:latest``` at [Docker Hub](https://hub.docker.com/r/pfillion/owncloud/)
+* [10.0.10](https://github.com/pfillion/owncloud/tree/master) available as ```pfillion/owncloud:10.0.10``` at [Docker Hub](https://hub.docker.com/r/pfillion/owncloud/)
 
 ## Volumes
+
+TODO: remove cron.d every minute for cronjob in the docker image OR order soluton. It raise error of login witjhout password every minute.
 
 * /mnt/data
 
