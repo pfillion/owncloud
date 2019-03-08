@@ -1,10 +1,11 @@
 ARG VERSION
-FROM owncloud/server:latest
 
-# Build-time metadata as defined at http://label-schema.org
+FROM owncloud/server:$VERSION
+
 ARG VERSION
 ARG BUILD_DATE
 ARG VCS_REF
+
 LABEL \
     org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.name="owncloud" \
@@ -17,4 +18,5 @@ LABEL \
     org.label-schema.schema-version="1.0"
 
 COPY rootfs /
+
 RUN rm /etc/cron.d/owncloud
