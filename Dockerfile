@@ -1,22 +1,23 @@
-ARG VERSION
+ARG CURRENT_VERSION_MICRO
 
-FROM owncloud/server:$VERSION
+FROM owncloud/server:$CURRENT_VERSION_MICRO
 
-ARG VERSION
-ARG BUILD_DATE
-ARG VCS_REF
+# Build-time metadata as defined at https://github.com/opencontainers/image-spec
+ARG DATE
+ARG CURRENT_VERSION_MICRO
+ARG COMMIT
+ARG AUTHOR
 
 LABEL \
-    org.label-schema.build-date=$BUILD_DATE \
-    org.label-schema.name="owncloud" \
-    org.label-schema.description="Docker image for ownCloud community edition" \
-    org.label-schema.url="https://hub.docker.com/r/pfillion/owncloud" \
-    org.label-schema.vcs-ref=$VCS_REF \
-    org.label-schema.vcs-url="https://github.com/pfillion/owncloud" \
-    org.label-schema.vendor="pfillion" \
-    org.label-schema.version=$VERSION \
-    org.label-schema.schema-version="1.0"
+    org.opencontainers.image.created=$DATE \
+    org.opencontainers.image.url="https://hub.docker.com/r/pfillion/owncloud" \
+    org.opencontainers.image.source="https://github.com/pfillion/owncloud" \
+    org.opencontainers.image.version=$CURRENT_VERSION_MICRO \
+    org.opencontainers.image.revision=$COMMIT \
+    org.opencontainers.image.vendor="pfillion" \
+    org.opencontainers.image.title="owncloud" \
+    org.opencontainers.image.description="Docker image for ownCloud community edition" \
+    org.opencontainers.image.authors=$AUTHOR \
+    org.opencontainers.image.licenses="MIT"
 
 COPY rootfs /
-
-RUN rm /etc/cron.d/owncloud
