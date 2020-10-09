@@ -14,6 +14,7 @@ The base image is from official [ownCloud](https://hub.docker.com/r/owncloud/ser
 
 ## Versions
 
+* [10.4.1](https://github.com/pfillion/owncloud/tree/master) available as ```pfillion/owncloud:10.4.1``` at [Docker Hub](https://hub.docker.com/r/pfillion/owncloud/)
 * [10.4.0](https://github.com/pfillion/owncloud/tree/master) available as ```pfillion/owncloud:10.4.0``` at [Docker Hub](https://hub.docker.com/r/pfillion/owncloud/)
 * [10.0.10](https://github.com/pfillion/owncloud/tree/master) available as ```pfillion/owncloud:10.0.10``` at [Docker Hub](https://hub.docker.com/r/pfillion/owncloud/)
 
