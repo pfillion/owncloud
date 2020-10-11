@@ -1,0 +1,1 @@
+../entrypoint.d/export-secret.sh

@@ -37,10 +37,17 @@ metadataTest:
   workdir: ""
 
 fileExistenceTests:
-- name: 'export-secret'
+- name: 'entrypoint.d-export-secret'
   path: '/etc/entrypoint.d/export-secret.sh'
   shouldExist: true
   permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+  isExecutableBy: 'group'
+- name: 'pre_cronjob.d-export-secret'
+  path: '/etc/pre_cronjob.d/export-secret.sh'
+  shouldExist: true
+  permissions: 'Lrwxrwxrwx'
   uid: 0
   gid: 0
   isExecutableBy: 'group'
