@@ -6,7 +6,6 @@
 
 [![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/pfillion/owncloud/latest?logo=docker)](https://hub.docker.com/r/pfillion/owncloud "Docker Hub Repository")
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/pfillion/owncloud/latest?logo=docker)](https://hub.docker.com/r/pfillion/owncloud "Docker Hub Repository")
-[![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/pfillion/owncloud/latest?logo=docker)](https://microbadger.com/images/pfillion/owncloud "Get your own commit badge on microbadger.com")
 
 These are docker images for [ownCloud](https://owncloud.org) community edition. Mainly, it's to manage [healthcheck](https://docs.docker.com/engine/reference/builder/#healthcheck) with credential specified by **secrets**.
 
