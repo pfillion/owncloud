@@ -3,7 +3,7 @@ SHELL = /bin/sh
 .DEFAULT_GOAL := help
 
 # Version
-VERSION ?= 10.7.0
+VERSION ?= 10.15.0
 VERSION_PARTS := $(subst ., ,$(VERSION))
 
 MAJOR := $(word 1,$(VERSION_PARTS))
@@ -34,6 +34,7 @@ bats-test: ## Test bash scripts
 	bats $(TEST_FOLDER)
 
 docker-build: ## Build the image form Dockerfile
+	chmod 755 -R ./rootfs/
 	docker build \
 		--build-arg DATE=$(DATE) \
 		--build-arg CURRENT_VERSION_MICRO=$(CURRENT_VERSION_MICRO) \
