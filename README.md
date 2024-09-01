@@ -13,7 +13,7 @@ The base image is from official [ownCloud](https://hub.docker.com/r/owncloud/ser
 
 ## Versions
 
-* [10.7.0](https://github.com/pfillion/owncloud/tree/master) available as ```pfillion/owncloud:10.7.0``` at [Docker Hub](https://hub.docker.com/r/pfillion/owncloud/)
+* [latest](https://github.com/pfillion/owncloud/tree/master) available as ``pfillion/owncloud:latest`` at [Docker Hub](https://hub.docker.com/r/pfillion/owncloud/)
 
 ## Volumes
 
