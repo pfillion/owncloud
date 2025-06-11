@@ -3,7 +3,7 @@ SHELL = /bin/sh
 .DEFAULT_GOAL := help
 
 # Version
-VERSION ?= 10.15.0
+VERSION ?= 10.15.2
 VERSION_PARTS := $(subst ., ,$(VERSION))
 
 MAJOR := $(word 1,$(VERSION_PARTS))
