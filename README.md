@@ -1,6 +1,6 @@
 # ownCloud
 
-[![Build Status](https://drone.pfillion.com/api/badges/pfillion/owncloud/status.svg?branch=master)](https://drone.pfillion.com/pfillion/owncloud)
+[![status-badge](https://woodpecker.pfillion.com/api/badges/6/status.svg)](https://woodpecker.pfillion.com/repos/6)
 ![GitHub](https://img.shields.io/github/license/pfillion/owncloud)
 [![GitHub last commit](https://img.shields.io/github/last-commit/pfillion/owncloud?logo=github)](https://github.com/pfillion/owncloud "GitHub projet")
 

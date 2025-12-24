@@ -1,4 +1,4 @@
-ARG CURRENT_VERSION_MICRO
+ARG CURRENT_VERSION_MICRO=latest
 
 FROM owncloud/server:$CURRENT_VERSION_MICRO
 
@@ -20,4 +20,4 @@ LABEL \
     org.opencontainers.image.authors=$AUTHOR \
     org.opencontainers.image.licenses="MIT"
 
-COPY rootfs /
+COPY --chmod=0755 rootfs /
