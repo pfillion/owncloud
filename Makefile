@@ -7,7 +7,7 @@ ifeq ($(MODE_LOCAL),true)
 endif
 
 # Version
-VERSION ?= 10.15.2
+VERSION ?= 10.16.0
 VERSION_PARTS := $(subst ., ,$(VERSION))
 
 MAJOR := $(word 1,$(VERSION_PARTS))
